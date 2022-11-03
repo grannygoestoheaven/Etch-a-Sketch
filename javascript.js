@@ -5,12 +5,13 @@ function createMultipleDivs()
     for(i = 0; i < SQUARECOUNT; i++)
     {
         const squareDiv = document.createElement('div');
-        mainContainer.append(squareDiv);
+        squareDiv.classList.add('square');
+        grid.append(squareDiv);
     }
 }
 
-const mainContainer = document.createElement('div');
-mainContainer.classList.add('main_container');
-document.body.append(mainContainer);
+const grid = document.createElement('div');
+grid.classList.add('grid');
+document.body.append(grid);
 
 createMultipleDivs();
