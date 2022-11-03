@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: forestgreen;
+}
+
+/* body {
+    margin: 0;
+} */
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.square {
+    border: 1px solid black;
+}
