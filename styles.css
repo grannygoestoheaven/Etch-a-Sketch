@@ -1,15 +1,17 @@
+:root {
+    --columns_and_rows: 
+}
+
 *
 {
     margin-left:auto;
     margin-right:auto;
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
-    /* outline: forestgreen; */
+    box-sizing: border-box;
 }
 
-body
-{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,33 +19,21 @@ body
     height: 100vh;
 }
 
-.grid
-{
+.grid {
     display: grid;
 
     min-width: 500px;
     min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
 
-    grid-template-columns: repeat(16, minmax(25px, 1fr));
-    /* grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr); */
     gap: 1px;
 }
 
-.grid > .square
-{
-    border: 1px solid lightslategray;
-}
-
-.grid > .square
-{
-    content:"";
-    padding-top:100%;
+.grid > .square {
+    border: 1px solid rgb(24, 30, 36);
 }
 
 .grid > .square:hover {
-    /* transform: scale(1.1); */
-    background-color: orange;
-    /* color: forestgreen;
-    color: red; */
+    background-color: rgb(155, 204, 156);
 }

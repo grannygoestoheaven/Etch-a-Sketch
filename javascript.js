@@ -1,7 +1,16 @@
-const SQUARECOUNT = 256;
+let userEntry = prompt("Enter squared number :")
+let squareDiv;
+const grid = document.createElement('div');
+const SQUARECOUNT = (userEntry * userEntry);
+
+grid.classList.add('grid');
+document.body.append(grid);
 
 function createMultipleDivs()
 {
+    grid.style.gridTemplateColumns = `repeat(${userEntry}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${userEntry}, 1fr)`;
+
     for(i = 0; i < SQUARECOUNT; i++)
     {
         const squareDiv = document.createElement('div');
@@ -9,9 +18,5 @@ function createMultipleDivs()
         grid.append(squareDiv);
     }
 }
-
-const grid = document.createElement('div');
-grid.classList.add('grid');
-document.body.append(grid);
 
 createMultipleDivs();
