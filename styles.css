@@ -9,15 +9,21 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
+.button {
+    border: 1px solid black;
+}
+
 .grid {
     display: grid;
-
+    
+    padding-top:25px;
     min-width: 500px;
     min-height: 500px;
     max-width: 500px;
@@ -27,9 +33,9 @@ body {
 }
 
 .grid > .square {
-    /* border: 1px solid rgb(24, 30, 36); */
+    border: 1px solid rgb(24, 30, 36);
     border-radius: 0px;
-    transition: 600ms;
+    transition: 800ms;
 }
 
 .grid > .square:hover {
